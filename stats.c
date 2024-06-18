@@ -2,7 +2,7 @@
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are
+ * forms is permitted as long as the files maunsigned charain this copyright. Users are
  * permitted to modify this and use it to learn about the field of embedded
  * software. Alex Fosdick and the University of Colorado are not liable for any
  * misuse of this material.
@@ -10,7 +10,7 @@
  *****************************************************************************/
 /**
  * @file stats.c
- * @brief <Add Brief Description Here >
+ * @brief including the necessary headers, function prototypes, and the complete main function with its supporting functions
  *
  * <Add Extended Description Here>
  *
@@ -33,7 +33,7 @@ void main()
                               7, 87, 250, 230, 99, 3, 100, 90};
 
   /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
+  /* Statistics and Prunsigned charing Functions Go Here */
   print_array(test, SIZE);
   print_statistics(test, SIZE);
   sort_array(test, SIZE);
@@ -41,18 +41,18 @@ void main()
   print_array(test, SIZE);
 }
 
-// Function to print the statistics of the array
-void print_statistics(unsigned char arr[], int length)
+// Function to prunsigned char the statistics of the array
+void print_statistics(unsigned char arr[], unsigned char length)
 {
   printf("Array Statistics:\n");
   printf("Minimum: %d\n", find_minimum(arr, length));
   printf("Maximum: %d\n", find_maximum(arr, length));
-  printf("Mean: %.2f\n", find_mean(arr, length));
+  printf("Mean: %d\n", find_mean(arr, length));
   printf("Median: %d\n", find_median(arr, length));
 }
 
-// Function to print the array
-void print_array(unsigned char arr[], int length)
+// Function to prunsigned char the array
+void print_array(unsigned char arr[], unsigned char length)
 {
   printf("Array Elements:\n");
   for (int i = 0; i < length; i++)
@@ -63,10 +63,10 @@ void print_array(unsigned char arr[], int length)
 }
 
 // Function to find the median of the array
-unsigned char find_median(unsigned char arr[], int length)
+unsigned char find_median(unsigned char arr[], unsigned char length)
 {
   unsigned char sorted[SIZE];
-  for (int i = 0; i < length; i++)
+  for (unsigned char i = 0; i < length; i++)
   {
     sorted[i] = arr[i];
   }
@@ -82,21 +82,19 @@ unsigned char find_median(unsigned char arr[], int length)
 }
 
 // Function to find the mean of the array
-float find_mean(unsigned char arr[], int length)
-{
-  int sum = 0;
-  for (int i = 0; i < length; i++)
-  {
-    sum += arr[i];
-  }
-  return (float)sum / length;
+unsigned char find_mean(unsigned char* arr, unsigned char length) {
+    unsigned int sum = 0;
+    for(unsigned int i = 0; i < length; i++) {
+        sum += arr[i];
+    }
+    return sum / length;
 }
 
 // Function to find the maximum value in the array
-unsigned char find_maximum(unsigned char arr[], int length)
+unsigned char find_maximum(unsigned char arr[], unsigned char length)
 {
   unsigned char max = arr[0];
-  for (int i = 1; i < length; i++)
+  for (unsigned char i = 1; i < length; i++)
   {
     if (arr[i] > max)
     {
@@ -107,10 +105,10 @@ unsigned char find_maximum(unsigned char arr[], int length)
 }
 
 // Function to find the minimum value in the array
-unsigned char find_minimum(unsigned char arr[], int length)
+unsigned char find_minimum(unsigned char arr[], unsigned char length)
 {
   unsigned char min = arr[0];
-  for (int i = 1; i < length; i++)
+  for (unsigned char i = 1; i < length; i++)
   {
     if (arr[i] < min)
     {
@@ -121,11 +119,11 @@ unsigned char find_minimum(unsigned char arr[], int length)
 }
 
 // Function to sort the array from largest to smallest
-void sort_array(unsigned char arr[], int length)
+void sort_array(unsigned char arr[], unsigned char length)
 {
-  for (int i = 0; i < length - 1; i++)
+  for (unsigned char i = 0; i < length - 1; i++)
   {
-    for (int j = 0; j < length - i - 1; j++)
+    for (unsigned char j = 0; j < length - i - 1; j++)
     {
       if (arr[j] < arr[j + 1])
       {

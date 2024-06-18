@@ -2,7 +2,7 @@
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are 
+ * forms is permitted as long as the files maunsigned charain this copyright. Users are 
  * permitted to modify this and use it to learn about the field of embedded
  * software. Alex Fosdick and the University of Colorado are not liable for any
  * misuse of this material. 
@@ -27,15 +27,15 @@
 
 
 // Function prototypes
-void print_statistics(unsigned char arr[], int length);
-void print_array(unsigned char arr[], int length);
-unsigned char find_median(unsigned char arr[], int length);
-float find_mean(unsigned char arr[], int length);
-unsigned char find_maximum(unsigned char arr[], int length);
-unsigned char find_minimum(unsigned char arr[], int length);
-void sort_array(unsigned char arr[], int length);
+void print_statistics(unsigned char arr[], unsigned char length);
+void print_array(unsigned char arr[], unsigned char length);
+unsigned char find_median(unsigned char arr[], unsigned char length);
+unsigned char find_mean(unsigned char arr[], unsigned char length);
+unsigned char find_maximum(unsigned char arr[], unsigned char length);
+unsigned char find_minimum(unsigned char arr[], unsigned char length);
+void sort_array(unsigned char arr[], unsigned char length);
 /**
- * @brief <Those functions are use to print the stastics (minimum, maximum, mean and the median), sorting the array from largest to smallest>
+ * @brief <Those functions are use to prunsigned char the stastics (minimum, maximum, mean and the median), sorting the array from largest to smallest>
  *
  * <Add Extended Description Here>
  * @param <arr> <given array in stats.c>
